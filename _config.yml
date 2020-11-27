@@ -7,7 +7,7 @@
 
 # Site settings
 title: ZPC
-brief-intro: Java后端开发
+brief-intro: 后端开发
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.codepeople.cn" # the base hostname & protocol for your site
 
