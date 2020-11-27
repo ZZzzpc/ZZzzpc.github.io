@@ -32,8 +32,7 @@
 
 
 
-博客地址：<https://www.codepeople.cn>
+<img src="https://github.com/ZZzzpc/my_picture/blob/main/001.png">
 
-[1]:https://github.com/ZZzzpc/my_picture/blob/main/00x58.jpg
 
 =====================================================================
