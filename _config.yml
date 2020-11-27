@@ -7,23 +7,17 @@
 
 # Site settings
 title: ZPC
-brief-intro: 后端开发
+brief-intro:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.codepeople.cn" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: PlayTaoist163
-facebook_username: PlayTaoist.water
-github_username: PlayTaoist
-email: liuren-mail@163.com
-weibo_username: 3115521wh
-zhihu_username: PlayTaoist
-linkedIn_username: PlayTaoist
-dribbble_username:
+github_username: ZZzzpc
+email: zzz@163.com
 
-description_footer: 本站记录我前端之旅的沿途风景！
+description_footer: 菜鸡要努力学习！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
@@ -40,8 +34,8 @@ valine_comment:
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: 615a7de4c851ccc25da60863f0a4225b
-google_analytics_id: 123456 # google 分析追踪id
+# baidu_tongji_id: 615a7de4c851ccc25da60863f0a4225b
+# google_analytics_id: 123456 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
