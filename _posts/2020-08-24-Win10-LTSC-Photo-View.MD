@@ -34,6 +34,6 @@
 
 博客地址：<https://www.codepeople.cn>
 
-![avatar](https://github.com/ZZzzpc/ZZzzpc.github.io/blob/master/imges/001.png)
+![avatar](https://github.com/ZZzzpc/my_picture/blob/main/00x58.jpg)
 
 =====================================================================
