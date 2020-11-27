@@ -40,16 +40,16 @@ description_footer: 菜鸡要努力学习！
 # Build settings
 markdown: kramdown
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
 
 # port
 # port: 1234
 
 # url
-category_dir: category/
-tag_dir: tag/
+# category_dir: category/
+#tag_dir: tag/
 
 # excerpt
 excerpt_separator: "\n\n\n\n"
