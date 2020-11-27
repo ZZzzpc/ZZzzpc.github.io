@@ -1,9 +1,9 @@
----
-title:  "恢复win10 LTSC 2019 图片查看器功能"
+//---
+//title:  "恢复win10 LTSC 2019 图片查看器功能"
 //categories: win10
 //tags: win10
 //author: zzz
----
+//---
 
 # 恢复win10 LTSC 2019 图片查看器功能
 
