@@ -25,11 +25,11 @@ description_footer: 菜鸡要努力学习！
 # duoshuo_shortname: #hygblog
 # disqus_shortname: PlayTaoist
 
-valine_comment:
-    enable: true
-    leancloud_appid: TyycwmVygccDruMiF6w0XwNb-gzGzoHsz
-    leancloud_appkey: 63tegakam3VgktVHeLjcr5RG
-    placeholder: "Just go go"
+# valine_comment:
+#    enable: true
+#    leancloud_appid: TyycwmVygccDruMiF6w0XwNb-gzGzoHsz
+#    leancloud_appkey: 63tegakam3VgktVHeLjcr5RG
+#    placeholder: "Just go go"
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
