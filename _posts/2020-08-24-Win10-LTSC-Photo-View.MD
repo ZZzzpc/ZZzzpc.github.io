@@ -32,7 +32,7 @@
 
 
 
-<img src="https://github.com/ZZzzpc/my_picture/blob/main/001.png">
+<img src="https://github.com/ZZzzpc/my_picture/raw/main/001.png">
 
 
 =====================================================================
