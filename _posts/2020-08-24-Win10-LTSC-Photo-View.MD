@@ -2,22 +2,19 @@
 title:  "恢复win10 LTSC 2019 图片查看器功能"
 categories: win10
 tags: win10
-author: LIUREN
+author: zzz
 ---
 
-# 恢复win10 LTSC 2019 图片查看器功能
+### 恢复win10 LTSC 2019 图片查看器功能
 
 > win10 LTSC 2019 是微软的长期支持版本这个版本更新代码比较少系统比较稳定：
 >
 > win10的图片查看功能被屏蔽了，想要重新打开图片查看功能需要按照如下步骤去操作文件
->
-> 协议：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/  
->
 > 版权声明：本文为原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 
 
 
-# 昨天新装了win10 LTSC 2019，发现默认打开图片的程序是“画图”。图片查看器找不到了。可以使用下面的方法恢复图片查看器
+### 昨天新装了win10 LTSC 2019，发现默认打开图片的程序是“画图”。图片查看器找不到了。可以使用下面的方法恢复图片查看器
 
 1、开始–运行–输入“regedit”打开注册表。
 
@@ -38,7 +35,3 @@ author: LIUREN
 博客地址：<https://www.codepeople.cn>
 
 =====================================================================
-
-微信公众号：
-
-![](https://www.codepeople.cn/imges/weixin_icon/weixin.jpg)
