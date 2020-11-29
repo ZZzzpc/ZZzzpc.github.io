@@ -39,7 +39,7 @@ author: Zpc
 创建数据库
 
 ```sql
-  create databases test;
+  create database test;
 ```
 
 查看某库中的所有数据表
@@ -52,23 +52,23 @@ author: Zpc
 
 ```sql
   CREATE TABLE pet(
-    name   VARCHAR(20),
-    owner  VARCHAR(20),
-    sex    CHAR(1),
-    birth  DATA
+    `name`   VARCHAR(20),
+    `owner`  VARCHAR(20),
+    `sex`    CHAR(1),
+    `birth`  DATA
     );
 ```
 
 查看数据表结构
 
 ```sql
-  describe pet;
+  desc pet;
 ```
 
 向表中添加数据结构
 
 ```sql
-  INSERT INT0 pet
+  INSERT INTO pet
   VALUES('Puffball','Diane','f','1999-01-01');
 ```
 
