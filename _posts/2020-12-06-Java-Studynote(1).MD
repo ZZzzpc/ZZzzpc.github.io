@@ -10,11 +10,6 @@ author: Zpc
 
  从Java 8开始，`java.time`包提供了新的日期和时间API，主要涉及的类型有：
 
- - 本地日期和时间：`LocalDateTime`，`LocalDate`，`LocalTime`；
- - 带时区的日期和时间：`ZonedDateTime`；
- - 时刻：`Instant`；
- - 时区：`ZoneId`，`ZoneOffset`；
- - 时间间隔：`Duration`。
 
  以及一套新的用于取代`SimpleDateFormat`的格式化类型`DateTimeFormatter`。
 
