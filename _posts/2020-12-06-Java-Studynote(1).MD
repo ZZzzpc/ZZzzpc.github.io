@@ -6,8 +6,26 @@ author: Zpc
 ---
 
 
-&ensp;&ensp;&ensp;&ensp;&ensp;Mysql是世界上最受欢迎关系型数据库管理系统之一，本系列将详细介绍Mysql的常用指令以及技术要点（基于win10）。首先要确保自己系统里已经安装好Mysql了。安装过程就不展开了，大家可以自行百度，里面教程很多。那么安装完如何打开这个管理系统嘞？
-<br>
+# LocalDateTime的JDK1.8的新特新
+
+> 从Java 8开始，`java.time`包提供了新的日期和时间API，主要涉及的类型有：
+>
+> - 本地日期和时间：`LocalDateTime`，`LocalDate`，`LocalTime`；
+> - 带时区的日期和时间：`ZonedDateTime`；
+> - 时刻：`Instant`；
+> - 时区：`ZoneId`，`ZoneOffset`；
+> - 时间间隔：`Duration`。
+>
+> 以及一套新的用于取代`SimpleDateFormat`的格式化类型`DateTimeFormatter`。
+>
+> 协议：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/  
+>
+> 版权声明：本文为原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+
+
+
+# 是否在时间段中
+
 
 # 命令提示符-常用指令
 
