@@ -55,8 +55,6 @@ exit
 ```
 
 
-<img src="https://github.com/ZZzzpc/my_picture/raw/main/1607240.png" width="50%" align="middle" >
-
 
 未完待续...... ^_^
 
