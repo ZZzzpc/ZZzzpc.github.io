@@ -10,6 +10,7 @@ tags:  threeJS webGL
 
 在了解了 three.js 中渲染器、场景、相机、几何体等基本知识后，我们来研究一下 three.js 中的光与影。
 
+![bloggbild_david_JS.jpg](https://ooo.0o0.ooo/2016/06/15/576125e78370d.jpg)
 
 本文是根据百度前端学院的任务安排进行探索和研究的。算是 [WebGL No. 2 - 光与影](http://ife.baidu.com/course/detail/id/28) 的学习笔记吧。
 
