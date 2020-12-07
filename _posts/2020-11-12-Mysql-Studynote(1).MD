@@ -6,7 +6,12 @@ author: Zpc
 ---
 
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;Mysql是世界上最受欢迎关系型数据库管理系统之一，本系列将详细介绍Mysql的常用指令以及技术要点（基于win10）。首先要确保自己系统里已经安装好Mysql了。安装过程就不展开了，大家可以自行百度，里面教程很多。那么安装完如何打开这个管理系统嘞？
+  &ensp;&ensp;&ensp;&ensp;&ensp;Mysql是世界上最受欢迎关系型数据库管理系统之一，本系列将详细介绍Mysql的常用指令以及技术要点（基于win10）。
+
+
+
+
+  &ensp;&ensp;&ensp;&ensp;&ensp;首先要确保自己系统里已经安装好Mysql了。安装过程就不展开了，大家可以自行百度，里面教程很多。那么安装完如何打开这个管理系统嘞？
   <br>
   &ensp;&ensp;&ensp;&ensp;&ensp;这里向大家介绍两种方法：  
 
