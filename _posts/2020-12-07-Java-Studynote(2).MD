@@ -1,20 +1,14 @@
 ---
-title:  "Java学习笔记（一）"
+title:  "Java学习笔记（二）"
 categories: Java
 tags: Java
 author: Zpc
 ---
 
-# Java简介
+# 前章回顾
 
- &ensp;&ensp;&ensp;&ensp;&ensp;Java是由Sun公司于1995年推出的高级程序设计语言，是目前
- 世界上最流行的编程语言。
- 它最大的特点是跨平台性，不论是win、linux、mac系统，只要安装了Jvm虚拟机，均可以运行
- 同一程序。
- 其次它在吸收了C++的优点之后，去除了C++中的指针、多继承等概念，使得Java上手更快。
- 本系列教程将逐步介绍Java的知识。
-
-
+ &ensp;&ensp;&ensp;&ensp;&ensp;在上一章，我们学习了基本的命令行操作。在简单介绍了Java中的几个概念后，学习了如何编写第一个程序以及Java程序是如何编译运行的。本章
+ 将继续Java的学习。
 
 
 
@@ -23,205 +17,227 @@ author: Zpc
 
 <br>
 
+# 数据类型
 
-在正式开始学习Java之前，我们要先掌握一些命令行下的操作。
+基本数据类型：
+> 整数型 byte short int long    
+> 浮点型  float double   
+> 字符型 char   
+> 布尔型 boolean
 
-# 命令提示符-常用指令
+引用数据类型：
+> 字符串    
+> 数组
+> 类   
+> 接口   
+> Lambda
 
-键盘win+R键输入cmd命令可以打开命令行界面，默认打开c盘
+Java中的整数默认类型为`int`，浮点默认类型是`double`
 
-打开E盘
-```shell
-E：
-```
+<img src="https://github.com/ZZzzpc/my_picture/raw/main/4.png" width="80%">
 
-打开某个文件夹（目标文件路径未知）
-```shell
-cd Program Files
-```
-使用键盘Tab键，可以顺次选择路径下的文件，最后按回车确认命令
-
-打开某个文件夹（目标文件路径已知）
-```shell
-cd C:\Program Files\MySQL\MySQL Server 8.0\bin
-```
-
-查看目标目录下的文件
-```shell
-dir
-```
-
-返回上一路径
-```shell
-cd..
-```
-
-返回根路径
-```shell
-cd \
-```
-
-清空命令行界面
-```shell
-cls
-```
-
-退出命令行界面
-```shell
-exit
-```
-<br>
-
-学习了以上内容，可以正式开始学习Java语言了！
-
-# Java语言开发环境搭建
-
-## Java虚拟机——JVM
-
-<img src="https://github.com/ZZzzpc/my_picture/raw/main/1.png" width="80%">
-
-可以看到，不论是什么系统，安装了对应的Jvm，即Java虚拟机，我们编写的Java代码，都可以完美的运行在Jvm上。
-
-## JRE和JDK
-JRE：Java程序的运行环境，包含了JVM和运行时所需要的核心类库。
-JDK：Java程序开发工具包，包含了JRE和开发人员使用的工具。
-
-如果我们只需要运行已有的Java程序，只需要安装JRE。
-如果我们想开发全新的Java程序，必须安装JDK。
-
-说了这么多，这些概念可能会混淆，下面这幅图展示了几种概念的关系。
-<img src="https://github.com/ZZzzpc/my_picture/raw/main/2.png" width="80%">
-
-## JDK下载
-JDK包含了JRE和我们开发所需要的工具，在ORACLE官网可以免费获取。
-安装教程非常简单，一路next即可。安装好后需要将Java添加到环境变量里。环境是否搭建好可以在cmd命令行里验证。
-输入
-```shell
-java -version
-```
-若能显示Java版本号，环境即搭建好了。
+注意事项：
+1、字符串不是基本类型，二十引用类型。   
+2、浮点型可能只是一个近似值，并非精确的值。   
+3、数据范围与字节数不一定相关。  
+4、浮点数默认类型为`double`,若要使用`float`类型，加后缀F。    
+整数默认类型`int`，若要使用`long`类型，加后缀L。
 
 
-# 编写Helloworld程序
+# 变量
 
-## 第一个Java程序
+程序运行期间，内容可以发生改变的量。  
 
-&ensp;&ensp;&ensp;&ensp;&ensp;在编写程序之前，我们先来了解一下Java程序的开发步骤。如图可以看到，java源程序由开发人员编写，由javac.exe将源程序编译成.class文件，再由java.exe将.class文件放到Jvm虚拟机中运行。目前流行的集成开发环境（IDE）比如Eclipse、IDEA等只是将这个流程打包起来了，背后的原理是不变的。
+创建变量格式： 数据类型 变量名称;  
+变量赋值格式： 变量名称 = 数据值;    
 
-<img src="https://github.com/ZZzzpc/my_picture/raw/main/3.png" width="80%">
+如 int a = 1;
 
-新建一个txt文件，命名为HelloWorld，打开输入
-```java
-public class HelloWorld{
-  public static void main(String[] args){
-    System.out.println("Hello world!");
-  }
-}
-```
-Ctrl+S保存后，将txt文件后缀.txt改为.java。便完成了一个Java程序的源程序。
+编程实例如下：
 
-下一步我们用java获得.class文件。打开cmd命令行界面到保存Java源程序的路径，然后输入
-
-```shell
-javac HelloWorld.java
-```
-
-完成后我们可以发现路径下多了一个.class文件，这样我们离成功越来越近了！继续输入
-
-```shell
-java HelloWorld
-```
-就可以看到输出了！
-
-
-## 程序注释与HelloWorld说明
-
-单行注释
-```java
-// 单行注释内容
-```
-
-多行注释
-```java
-/*
- 多行注释内容
-*/
-```
-
-类名必须与文件名称完全一致（大小写也要一致）
-```java
-public class HelloWorld{
-
-}
-```
-
-第二行写法固定，代表main方法，是程序的入口
-```java
-public static void main(String[] args){
-
-}
-```
-
-
-# 关键字
-
-特点：1、英文小写字母  
-&ensp;&ensp;&ensp;&ensp;&ensp; 2、在增强型编辑器中有特殊颜色
-
-# 标识符
-
-指在程序中，自己定义的内容。
-
-命名规则：
- - 可以包含26个英文字母、数字、$符号和_下划线。
- - 不能以数字开头。
- - 不能是关键字。
-
-# 常量
-
-常量：在程序运行期间，固定不变的量。
-
-分类：
-> 字符串常量：凡是用双引号引起来的部分，叫做字符串常量。如"abc"    
-> 整数常量：没有小数点的数字   如"2"    
-> 浮点数常量：有小数点的数字   如"2.2"    
-> 字符常量：凡是用单引号引起的单个字符   如'A'     
-> 布尔常量：只有两个值      true   false   
-> 空常量：null。表示没有任何数据
-
-可以打印出来看看
 ```java
 public class Demo {
    public static void main(String[] args) {
-       //字符串常量
-       System.out.println("ABC");
-       System.out.println("");
-       System.out.println("123");
+       int num1 = 20;
+       System.out.println(num1);
 
-       //整数常量
-       System.out.println("123");
-       System.out.println("-123");
+       num1 = 25;
+       System.out.println(num1);
 
-       //浮点数常量
-       System.out.println("3.14");
-       System.out.println("-3.14");
+       byte num2 = 30;
+       System.out.println(num2);
 
-       //字符常量
-       System.out.println('A');
-       System.out.println('6');
+       //byte num2 = 400;   //错误 超出数据类型的取值范围
 
-       //布尔常量
-       System.out.println(true);
-       System.out.println(false);
+       short num3 = 50;
+       System.out.println(num3);
 
-       //空常量
-       System.out.println(null); //错误 空常量不能打印
+       long num4 = 3000000L;
+       System.out.println(num4);
+
+       float num5 = 2.5F;
+       System.out.println(num5);
+
+       double num6 = 1.2;
+       System.out.println(num6);
+
+       char var1 = 'a';
+       System.out.println(var1);
+
+       var1 = '我';
+       System.out.println(var1);
+
+       boolean var2 = true;
+       System.out.println(var2);
+       var2 = false;
+       System.out.println(var2);
    }
 }
 ```
 
-<br>
-<br>
+注意事项：
+1、若创建多个变量，则变量之间的名称不可以重复。   
+2、对于`float`和`long`类型来说，字母后最F和L不要丢掉。  
+3、对于使用`byte`和`short`类型的变量，右侧的数据值不能超过左侧类型的范围。   
+4、没有进行赋值的变量，不能直接使用。   
+5、变量使用不能超过作用域的范围。    
+【作用域】：从定义变量的一行开始，一直到直接所属的大括号结束为止。  
+6、可以通过一个语句创建多个变量。
+
+
+# 数据类型转换
+
+当数据类型不一致时，会发生数据类型转换。数据类型转换分为自动类型转换和强制类型转换。  
+
+自动类型转换：  
+1、代码不需要特殊处理，自动完成。  
+2、数据范围从小到大。
+
+```java
+public class DemoCalendar {
+    public static void main(String[] args) {
+        long num1 = 100;
+        double num2 = 2.5F;
+        float num3 = 30L
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+    }
+}
+```
+
+强制类型转换：
+1、代码需要特殊处理，不能自动完成
+2、范围小的类型 范围小的变量名 = （范围小的类型）范围大的数据;    
+3、强制类型转换不推荐使用，可能造成精度损失、数据溢出。  
+4、byte、short、char类型都可以进行数学运算，在计算的时候，都会被转换为int类型，然后子再计算。  
+
+
+# ASCII码表
+
+ASCII是一种数字和字符的对照关系表,全称是American Standard for Informantion Interchange(美国信息交换标准代码)。
+
+常见的编码表还有Unicode编码、中文编码等。
+
+表如下:
+
+<img src="https://github.com/ZZzzpc/my_picture/raw/main/8.png" width="80%">
+
+不需要记住全部的对应关系，只需要记住重要的三个对应关系:   
+48 - ‘0’   
+65 - ‘A’   
+97 - ‘a’
+
+
+
+# 运算符
+
+运算符：进行特定操作的符号。例如：+，—，*    
+表达式：用运算符连接的算式。例如：20 + 5 ，a + b   
+
+
+ <img src="https://github.com/ZZzzpc/my_picture/raw/main/5.png" width="80%">    
+
+## 算数运算符
+
+ 注意事项：   
+ 1、对于一个整数表达式，除法用的是整除，结果仍然是整数，只看商，不看余数。   
+ 2、只有对于整数的除法来说，取模运算符才有意义。    
+ 3、一旦运算中有不同类型的数据，结果将是数据类型范围大的那种。
+
+ ### ‘+’：   
+ 1、数值加法   
+ 2、字符char类型加法，char会被转换为int后计算（ASCII转换）。   
+ 3、字符串String，加法代表字符串的连接。任何数据类型和字符串进行连接时，结果都是字符串。    
+
+ ### ‘++’  ‘--’：
+使用方式：   
+1、单独使用：不和其他任何操作混合    
+2、混合使用：和其他操作混合    
+
+使用区别：   
+1、单独使用时，++num和num++完全一样。  
+2、混合使用时：   
+&nbsp;&nbsp;&nbsp;&nbsp;++num表示立刻+1，并使用结果。  
+&nbsp;&nbsp;&nbsp;&nbsp;num++表示先使用num后再+1。   
+
+注意事项：   
+1、只有变量能够进行自增自减。
+
+
+## 赋值运算符
+
+基本赋值运算符： ‘=’   
+复合赋值运算符：    
+‘+=’ &nbsp;&nbsp;&nbsp;&nbsp; a+=3 等于 a=a+3   
+‘-+’ &nbsp;&nbsp;&nbsp;&nbsp; a-=5 等于 a=a-5       
+‘*=’     
+‘/=’     
+‘%=’
+
+ <img src="https://github.com/ZZzzpc/my_picture/raw/main/6.png" width="80%">  
+
+
+
+## 比较运算符  
+
+两个数据之间进行比较的运算，运算结果为`true`和`false`。
+
+ <img src="https://github.com/ZZzzpc/my_picture/raw/main/7.png" width="80%">  
+
+注意事项：   
+1、结果只有`true`和`false`这两种值。   
+2、不能连着进行比较运算。
+
+
+## 逻辑运算符
+
+与 && 全都是真，才是真；否则为假。  
+或 || 至少一个真，才为真；全都是假，才是假。   
+非 ！ 本来是真，变为假；本来是假，变为真。  
+
+## 三元运算符  
+
+一元运算符：只需要一个数据就可以进行操作的运算符，如！、++、--   
+二元运算符：需要两个数据才能进行操作的运算符，如+、-、=    
+三元运算符：需要三个数据参嗯那个进行的运算符    
+
+使用格式：   
+数据类型 变量名称 = 条件判断？表达式A：表达式B；   
+
+运算结果：  
+如果成立为true，将A的值赋给左侧变量     
+如果成立为false，将B的值赋给左侧变量    
+
+注意事项：  
+1、必须同时保证表达式A、B都符合左侧数据类型的要求。
+2、三元运算符的结果必须被使用。
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 未完待续...... ^_^
 
